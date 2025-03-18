@@ -41,8 +41,8 @@ void Player_Init(Player*player) {
 
 
 
-	player->x = screen_width / 2.0f - 85 / 2.0f;
-	player->y = screen_height - 200;
+	player->x = 150;//screen_width / 2.0f - 85 / 2.0f;
+		player->y = 470;//screen_height - 200;
 	player->frametimer = 0.0f;
 	player->currentframe = 0;
 	player->currentframe_jump = 0;
@@ -79,6 +79,17 @@ void Player_Update(Player* player, float deltatime) {
 		player->isMovingRight = 1;
 		player->isFacingRight = 0;
 	}
+
+	/*m.alkhlil*/
+	// Apply Boundary Check for X position
+	if (player->x < 32) {
+		player->x = 32; // Prevent moving off the left edge
+	}
+	if (player->x > screen_width-32) {
+		player->x = screen_width-32; // Prevent moving off the right edge
+	}
+
+
 
 	//jumping
 	if (CP_Input_KeyTriggered(KEY_W) && !player->isJumping) {
