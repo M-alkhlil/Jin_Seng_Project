@@ -1,8 +1,7 @@
 #include "game.h"
 #include"player.h"
 #include"level.h"
-#include"collision.h"
-CP_Image background;
+ CP_Image background;
 Player player;
 CP_Sound GameSound = NULL;
 

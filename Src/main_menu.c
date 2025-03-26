@@ -3,6 +3,8 @@
 #include<mainmenu.h>
 #include<stdbool.h>
 #include<stdlib.h>
+#include<game.h>
+
 
 static CP_Image g_digipenlogo = NULL;
 static CP_Image Splash_screen = NULL;
@@ -21,7 +23,7 @@ typedef enum {
 	BUTTON_OPTION,
 	BUTTON_EXIT
 }ButtonType;
-
+ 
 void DrawButton(float x, float y, const char* text);
 
 enum SplashScreenState g_splashScreenState = DIGIPENLOGO;

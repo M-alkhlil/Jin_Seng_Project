@@ -21,10 +21,10 @@
     <ClCompile Include="Src\player.c">
       <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="Src\collision.c">
+    <ClCompile Include="Src\level.c">
       <Filter>Src</Filter>
     </ClCompile>
-    <ClCompile Include="Src\level.c">
+    <ClCompile Include="Src\cJSON.c">
       <Filter>Src</Filter>
     </ClCompile>
   </ItemGroup>
@@ -44,8 +44,13 @@
     <ClInclude Include="Inc\level.h">
       <Filter>Inc</Filter>
     </ClInclude>
-    <ClInclude Include="Inc\collision.h">
+    <ClInclude Include="Inc\cJSON.h">
       <Filter>Inc</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\map.json">
+      <Filter>Src</Filter>
+    </None>
   </ItemGroup>
 </Project>
